@@ -145,7 +145,7 @@ tagline: 'Sample Project Documentation',
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Roushan Gupta. All rights reserved.`,
       },
       prism: {
         theme: prismThemes.github,
