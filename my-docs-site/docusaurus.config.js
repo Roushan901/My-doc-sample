@@ -10,6 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  trailingSlash: false, // Set to false to avoid extra trailing slash issues on GitHub Pages
   title: 'My Documentation Sample',
 tagline: 'Sample Project Documentation',
   favicon: 'img/favicon.ico',
@@ -20,15 +21,15 @@ tagline: 'Sample Project Documentation',
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://roushangupta.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/my-doc-sample/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'roushangupta', // Usually your GitHub org/user name.
+  projectName: 'my-doc-sample', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -51,7 +52,7 @@ tagline: 'Sample Project Documentation',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/roushangupta/my-doc-sample/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -62,7 +63,7 @@ tagline: 'Sample Project Documentation',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/roushangupta/my-doc-sample/edit/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -95,7 +96,7 @@ tagline: 'Sample Project Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/roushangupta/my-doc-sample',
             label: 'GitHub',
             position: 'right',
           },
@@ -139,7 +140,7 @@ tagline: 'Sample Project Documentation',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/roushangupta/my-doc-sample',
               },
             ],
           },
