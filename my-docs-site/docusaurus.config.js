@@ -28,8 +28,8 @@ tagline: 'Sample Project Documentation',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'roushangupta', // Usually your GitHub org/user name.
-  projectName: 'my-doc-sample', // Usually your repo name.
+  organizationName: 'Roushan901', // Correct GitHub username (case-sensitive)
+  projectName: 'My-doc-sample', // Correct repo name (case-sensitive)
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
