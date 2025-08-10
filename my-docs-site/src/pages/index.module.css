@@ -21,3 +21,31 @@
   align-items: center;
   justify-content: center;
 }
+ 
+.videoSection {
+  padding: 3rem 0;
+  background-color: #fff;
+}
+
+.videoEmbed {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border: none;
+}
+
+.menuSection {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-top: 1rem;
+}

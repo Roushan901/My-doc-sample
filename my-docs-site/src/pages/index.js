@@ -39,51 +39,23 @@ export default function Home() {
         description="Sample Project Documentation"
       >
         <main>
-          <section
-            style={{
-              background: 'linear-gradient(90deg, #2563eb 0%, #38bdf8 100%)',
-              color: '#fff',
-              padding: '4rem 0',
-              textAlign: 'center',
-              position: 'relative',
-            }}
-          >
-            <h1 style={{ fontSize: '3.2rem', fontWeight: 'bold', letterSpacing: '1px' }}>
-              🚀 My Documentation Sample
-            </h1>
-            <p style={{ fontSize: '1.6rem', marginBottom: '2.2rem' }}>
-              Empower your team with clear, beautiful docs.
-            </p>
-            <button
-              style={{
-                fontSize: '1.2rem',
-                padding: '1rem 2.5rem',
-                borderRadius: '12px',
-                border: 'none',
-                background: '#38bdf8',
-                color: '#fff',
-                fontWeight: 'bold',
-                cursor: 'pointer',
-                boxShadow: '0 2px 12px rgba(0,0,0,0.12)',
-                transition: 'background 0.2s',
-              }}
-              onMouseOver={e => (e.target.style.background = '#2563eb')}
-              onMouseOut={e => (e.target.style.background = '#38bdf8')}
-            >
-              ✨ Get Started
-            </button>
-          </section>
+          <HomepageHeader />
           
-          {/* Menu Card Section */}
-          <section
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              gap: '2rem',
-              margin: '3rem 0',
-              flexWrap: 'wrap',
-            }}
-          >
+          <section className={styles.videoSection}>
+            <div className="container">
+              <iframe
+                className={styles.videoEmbed}
+                src="https://www.youtube.com/embed/XU5xt1kBuyI"
+                title="Introduction Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </section>
+
+          {/* Menu Cards */}
+          <section className={styles.menuSection}>
             <Link
               to="/docs/intro"
               style={{
@@ -134,6 +106,32 @@ export default function Home() {
                 <span style={{ fontSize: '2.2rem' }}>📝</span>
                 <h3 style={{ margin: '1rem 0 0.5rem 0', color: '#2563eb' }}>Blog</h3>
                 <p style={{ fontSize: '1rem', color: '#555' }}>Latest updates & news</p>
+              </div>
+            </Link>
+            <Link
+              to="/docs/tutorial-basics"
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+              }}
+            >
+              <div
+                style={{
+                  width: '220px',
+                  background: '#fff',
+                  borderRadius: '16px',
+                  boxShadow: '0 2px 12px rgba(0,0,0,0.10)',
+                  padding: '2rem 1rem',
+                  textAlign: 'center',
+                  cursor: 'pointer',
+                  transition: 'transform 0.2s',
+                }}
+                onMouseOver={e => (e.currentTarget.style.transform = 'scale(1.05)')}
+                onMouseOut={e => (e.currentTarget.style.transform = 'scale(1)')}
+              >
+                <span style={{ fontSize: '2.2rem' }}>🎓</span>
+                <h3 style={{ margin: '1rem 0 0.5rem 0', color: '#2563eb' }}>Tutorial</h3>
+                <p style={{ fontSize: '1rem', color: '#555' }}>Start the tutorial</p>
               </div>
             </Link>
             <a
